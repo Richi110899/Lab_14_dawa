@@ -31,6 +31,10 @@ export default function Home() {
 
         {/* Tipo de contenido (en este caso, un sitio web) */}
         <meta property="og:type" content="website" />
+        <meta
+          name="google-site-verification"
+          content="googlee66880d960ff967c"
+        />
       </Head>
 
       {/* Contenido visible de la página */}
