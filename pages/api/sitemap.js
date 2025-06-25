@@ -1,15 +1,14 @@
-const BASE_URL = "https://lab-14-dawa.vercel.app"; // Definimos la URL base del sitio
+const BASE_URL = "https://lab-14-dawa.vercel.app";
 
 export default async function handler(req, res) {
-  // Función que maneja la petición API
-  const urls = ["/", "/blog", "/contacto"]; // Array con las rutas a incluir en el sitemap
+  const urls = ["/", "/blog", "/contacto"];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n
     ${urls.map((url) => `<url><loc>${BASE_URL}${url}</loc></url>`).join("")}\n
-  </urlset>`; // Generamos el contenido XML del sitemap con las URLs completas
+  </urlset>`;
 
-  res.setHeader("Content-Type", "text/xml"); // Indicamos que la respuesta es XML
-  res.write(sitemap); // Enviamos el sitemap en la respuesta
-  res.end(); // Finalizamos la respuesta
+  res.setHeader("Content-Type", "text/xml");
+  res.write(sitemap);
+  res.end();
 }
