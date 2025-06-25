@@ -1,0 +1,3 @@
+User-agent: *  # Indica que esta regla aplica para todos los bots
+Allow: /       # Permite que todos los bots accedan a todas las rutas
+Sitemap: https://mi-sitio.com/api/sitemap  # Ubicación del sitemap XML para facilitar el rastreo
