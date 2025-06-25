@@ -1,4 +1,4 @@
-const BASE_URL = "https://mi-sitio.com"; // Definimos la URL base del sitio
+const BASE_URL = "https://lab-14-dawa.vercel.app"; // Definimos la URL base del sitio
 
 export default async function handler(req, res) {
   // Función que maneja la petición API
